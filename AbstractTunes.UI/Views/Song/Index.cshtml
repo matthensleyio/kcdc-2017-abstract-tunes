@@ -1,0 +1,37 @@
+﻿@using System.Web.Mvc.Html
+@using AbstractTunes.Data.Models.Songs
+@model IEnumerable<AbstractTunes.Data.Models.Songs.Song>
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>View</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>@String.Empty</th>
+        <th>Title</th>
+        <th>Artist</th>
+        <th>Album</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td><img class="img-circle" style="height: 20px; width: 20px;" src="@item.Metadata.AlbumInfo.ArtworkLink"/></td>
+        <td>@item.Metadata.Title</td>
+        <td>@item.Metadata.Artist</td>
+        <td>@item.Metadata.AlbumInfo.Name</td>
+
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {id = item.Metadata.SongId}) |
+            @Html.ActionLink("Details", "Details", new {id = item.Metadata.SongId}) |
+            @Html.ActionLink("Delete", "Delete", new {id = item.Metadata.SongId})
+        </td>
+    </tr>
+}
+
+</table>

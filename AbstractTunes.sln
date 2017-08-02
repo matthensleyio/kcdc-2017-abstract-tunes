@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractTunes.Data", "AbstractTunes.Data\AbstractTunes.Data.csproj", "{962BBC24-8832-45DF-B743-2E834EF855CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractTunes.UI", "AbstractTunes.UI\AbstractTunes.UI.csproj", "{1963991E-9351-4F55-A95D-5999A363F549}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{962BBC24-8832-45DF-B743-2E834EF855CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{962BBC24-8832-45DF-B743-2E834EF855CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{962BBC24-8832-45DF-B743-2E834EF855CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{962BBC24-8832-45DF-B743-2E834EF855CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1963991E-9351-4F55-A95D-5999A363F549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1963991E-9351-4F55-A95D-5999A363F549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1963991E-9351-4F55-A95D-5999A363F549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1963991E-9351-4F55-A95D-5999A363F549}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

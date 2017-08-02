@@ -2,4 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/AbstractTunes.Data/bin/Debug
+/AbstractTunes.Data/bin
+/AbstractTunes.Data/obj
+/AbstractTunes.UI/bin
+/AbstractTunes.UI/obj
+/packages
