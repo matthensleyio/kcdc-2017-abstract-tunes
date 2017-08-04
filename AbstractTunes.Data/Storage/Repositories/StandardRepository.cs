@@ -11,7 +11,7 @@ namespace AbstractTunes.Data.Storage.Repositories
 {
     public class StandardRepository: IAudioFileRepository, IMetadataRepository
     {
-        public void Save(AudioFile audio)
+        public void SaveAudioFile(AudioFile audio)
         {
             using (var dataContext = new AbstractTunesDataContext())
             {
@@ -21,7 +21,7 @@ namespace AbstractTunes.Data.Storage.Repositories
             }
         }
 
-        public AudioFile Get(string fileName)
+        public AudioFile GetAudioFile(string fileName)
         {
             using (var dataContext = new AbstractTunesDataContext())
             {

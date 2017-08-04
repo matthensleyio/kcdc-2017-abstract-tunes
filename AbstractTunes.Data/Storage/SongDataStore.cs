@@ -39,7 +39,7 @@ namespace AbstractTunes.Data.Storage
             var songs = new List<Song>();
             foreach (var songMetadata in allSongMetadata)
             {
-                var audioFile = _audioFileRepository.Get(songMetadata.Title);
+                var audioFile = _audioFileRepository.GetAudioFile(songMetadata.Title);
 
                 var song = new Song
                 {
@@ -57,7 +57,7 @@ namespace AbstractTunes.Data.Storage
         public Song GetSong(int songId)
         {
             var metadata = _metadataRepository.GetSongMetadata(songId);
-            var audioFile = _audioFileRepository.Get(metadata.Title);
+            var audioFile = _audioFileRepository.GetAudioFile(metadata.Title);
             
             return new Song
             {
@@ -70,14 +70,14 @@ namespace AbstractTunes.Data.Storage
         public void SaveSong(Song song)
         {
             _metadataRepository.SaveSongMetadata(song.Metadata);
-            _audioFileRepository.Save(song.File);
+            _audioFileRepository.SaveAudioFile(song.File);
         }
 
 
         public void UpdateSong(int songId, Song song)
         {
             _metadataRepository.UpdateSongMetadata(songId, song.Metadata);
-            _audioFileRepository.Save(song.File);
+            _audioFileRepository.SaveAudioFile(song.File);
         }
 
 

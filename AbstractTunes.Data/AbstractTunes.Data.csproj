@@ -61,6 +61,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Storage\Repositories\Audio\IAudioFileRepository.cs" />
     <Compile Include="Storage\Repositories\Metadata\IMetadataRepository.cs" />
+    <Compile Include="Storage\Repositories\Metadata\MetadataRepository.cs" />
     <Compile Include="Storage\Repositories\Shared\S3Repository.cs" />
     <Compile Include="Storage\SongDataStore.cs" />
     <Compile Include="Storage\Repositories\Audio\PremiumAudioFileRepository.cs" />

@@ -5,8 +5,8 @@ namespace AbstractTunes.Data.Storage.Repositories.Audio
 {
     public interface IAudioFileRepository
     {
-        void Save(AudioFile audio);
+        void SaveAudioFile(AudioFile audio);
 
-        AudioFile Get(string fileName);
+        AudioFile GetAudioFile(string fileName);
     }
 }

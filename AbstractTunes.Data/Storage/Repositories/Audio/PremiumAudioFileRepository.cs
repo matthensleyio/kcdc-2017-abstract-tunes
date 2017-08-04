@@ -9,14 +9,15 @@ namespace AbstractTunes.Data.Storage.Repositories.Audio
     {
         private const string PremiumFileDirectory = @"Premium/Songs/";
 
-        public void Save(AudioFile audio)
+        public void SaveAudioFile(AudioFile audio)
         {
             var audioFileContent = Encoding.Default.GetString(audio.FileBytes);
 
             base.UploadFile(audioFileContent, $"{PremiumFileDirectory}/{audio.Name}");
         }
 
-        public AudioFile Get(string fileName)
+
+        public AudioFile GetAudioFile(string fileName)
         {
             var fileContent = base.DownloadFile($"{PremiumFileDirectory}/{fileName}");
 
